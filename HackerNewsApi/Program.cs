@@ -23,6 +23,7 @@ builder.Services.AddCors(options =>
                     });
 });
 builder.Services.AddSwaggerGen();
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 

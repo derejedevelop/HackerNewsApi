@@ -6,4 +6,5 @@ public interface IHackerNewsService
 {
     Task<List<HackerNewsStory>> GetNewStoriesAsync(CancellationToken cancellationToken);
     Task<HackerNewsStory> GetStoryDetailAsync(int id, CancellationToken cancellationToken);
+    Task<List<int>> GetCurrentStoryIds(CancellationToken cancellationToken);
 }
